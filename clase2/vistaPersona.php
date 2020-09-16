@@ -3,8 +3,10 @@
     require 'Persona.php';
     // instanciar un objeto a partir de clase Persona
     $oPersona = new Persona;
-    //$oPersona->nombre = 678489; no debemos tener atributos públicos
-    //$oPersona->apellido = 97684; no debemos tener atributos públicos
+
+    //invocamos a setters
+    $oPersona->setNombre('Ronnie');
+    $oPersona->setApellido('Woods');
 ?>
 <!doctype html>
 <html lang="en">
