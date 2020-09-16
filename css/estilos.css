@@ -17,6 +17,7 @@ pre{
 	border-radius: 8px;
 	border-left: 6px solid #59D9CB;
 	padding-top: 10px;
+	padding-left: 26px;
 	font-family: 'Fira Code', monospace;
 	cursor: help;
 }

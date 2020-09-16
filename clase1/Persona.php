@@ -7,6 +7,11 @@
         private $apellido;
 
         ## métodos
+
+        /**
+         * Método para informar datos de la Persona
+         * @return string $mensaje
+         */
         public function verDatos()
         {
             $mensaje = 'Nombre: '.$this->nombre;
