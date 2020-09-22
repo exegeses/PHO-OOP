@@ -12,7 +12,7 @@
 
             <h1>Panel de administración de regiones</h1>
 
-            <table class="table table-hover table-striped">
+            <table class="table table-hover table-striped border-0">
                 <thead class="thead-white">
                 <tr>
                     <th>#</th>
