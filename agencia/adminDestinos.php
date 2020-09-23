@@ -1,5 +1,7 @@
 <?php
     require 'config/config.php';
+
+    require 'clases/Destino.php';
     include 'includes/over-all-header.html';
     include 'includes/nav.php';
 ?>
