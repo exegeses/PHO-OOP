@@ -1,8 +1,8 @@
 
-<header class="mb-3 bg-dark shadow-sm">
+<header class="mb-3 py-3 bg-dark shadow-sm">
 
     <div class="container">
-    <nav class=" navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
 
         <a class="navbar-brand mr-4" href="#">
             <i class="fas fa-globe-americas"></i>
@@ -13,10 +13,10 @@
         </button>
         <div class="ml-4 collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-4">
-                <a class="nav-item nav-link" <?= activo('index') ?>" href="index.php">Inicio</a>
-                <a class="nav-item nav-link" <?= activo('dashboard') ?>" href="dashboard.php">Dashboard</a>
-                <a class="nav-item nav-link" <?= activo('adminRegiones') ?>" href="adminRegiones.php">Regiones</a>
-                <a class="nav-item nav-link" <?= activo('adminDestinos') ?>" href="adminDestinos.php">Restinos</a>
+                <a class="nav-item nav-link <?= activo('index') ?>" href="index.php">Inicio</a>
+                <a class="nav-item nav-link <?= activo('dashboard') ?>" href="dashboard.php">Dashboard</a>
+                <a class="nav-item nav-link <?= activo('adminRegiones') ?>" href="adminRegiones.php">Regiones</a>
+                <a class="nav-item nav-link <?= activo('adminDestinos') ?>" href="adminDestinos.php">Destinos</a>
             </div>
         </div>
 

@@ -2,7 +2,25 @@
 body{
     font-family: Raleway, sans-serif;
 }
+header{
+    height: 160px;
+}
 
 main{
     padding-bottom: 100px;
+}
+
+.active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+nav a{
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+th{
+    font-weight: bold;
 }
