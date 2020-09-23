@@ -6,7 +6,7 @@
 
         <main class="container">
 
-            <h1>Panel de administración de regiones</h1>
+            <h1>Panel de administración de Destinos</h1>
 
             <table class="table table-borderless table-hover table-striped">
                 <thead>
