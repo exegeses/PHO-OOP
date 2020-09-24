@@ -1,7 +1,9 @@
 <?php
     require 'config/config.php';
-
+    require 'clases/Conexion.php';
     require 'clases/Destino.php';
+    $Destino = new Destino();
+        $destinos = $Destino->listarDestinos();
     include 'includes/over-all-header.html';
     include 'includes/nav.php';
 ?>
@@ -29,15 +31,15 @@
                 </thead>
                 <tbody>
 <?php
-
+            foreach ( $destinos as $destino ){
 ?>
                 <tr>
-                    <td>1</td>
-                    <td>Destino </td>
-                    <td>región </td>
-                    <td>$precio </td>
-                    <td>asientos</td>
-                    <td>disponibles</td>
+                    <td><?= $destino['destID'] ?></td>
+                    <td><?= $destino['destNombre'] ?></td>
+                    <td><?= $destino['regNombre'] ?></td>
+                    <td>$<?= $destino['destPrecio'] ?> </td>
+                    <td><?= $destino['destAsientos'] ?></td>
+                    <td><?= $destino['destDisponibles'] ?></td>
                     <td>
                         <a href="" class="btn btn-outline-warning">
                             <i class="fas fa-pen mr-2"></i>
@@ -52,7 +54,7 @@
                     </td>
                 </tr>
 <?php
-
+            }
 ?>                
                 </tbody>
 
