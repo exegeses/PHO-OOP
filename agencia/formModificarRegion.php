@@ -1,6 +1,10 @@
 <?php
 
     require 'config/config.php';
+    require 'clases/Conexion.php';
+    require 'clases/Region.php';
+    $Region = new Region();
+        $Region->verRegionPorID();
 
     include 'includes/over-all-header.html';
     include 'includes/nav.php';
@@ -15,7 +19,8 @@
 
                     <div class="form-group">
                     <label for="regNombre">Nombre de la región:</label>
-                    <input type="text" name="regNombre" 
+                    <input type="text" name="regNombre"
+                           value="<?= $Region->getRegNombre() ?>"
                            id="regNombre" class="form-control">
                     </div>
 
@@ -26,7 +31,6 @@
                 </form>
 
             </div>
-
 
     </main>
 <?php

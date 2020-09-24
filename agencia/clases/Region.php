@@ -22,7 +22,18 @@
         {
             $regID = $_GET['regID'];
             $link = Conexion::conectar();
+            $sql = "SELECT regID, regNombre
+                        FROM regiones
+                        WHERE regID = ".$regID;
+            $stmt = $link->prepare($sql);
+            $stmt->execute();
 
+            $datosRegion = $stmt->fetch();
+            // seteamos los atributos
+            $this->setRegID( $datosRegion['regID'] );
+            $this->setRegNombre( $datosRegion['regNombre'] );
+
+            return true;
         }
         
         ###########################
