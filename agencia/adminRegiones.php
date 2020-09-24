@@ -18,7 +18,7 @@
                     <th>#</th>
                     <th>Región</th>
                     <th colspan="2">
-                        <a href="" class="btn btn-outline-secondary">
+                        <a href="formAgregarRegion.php" class="btn btn-outline-secondary">
                             <i class="fas fa-plus mr-2"></i>
                             Agregar
                         </a>
@@ -33,7 +33,7 @@
                     <td><?= $region['regID'] ?></td>
                     <td><?= $region['regNombre'] ?></td>
                     <td>
-                        <a href="" class="btn btn-outline-secondary">
+                        <a href="formModificarRegion.php?regID=<?= $region['regID'] ?>" class="btn btn-outline-secondary">
                             <i class="fas fa-pen mr-2"></i>
                             Modificar
                         </a>

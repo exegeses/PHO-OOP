@@ -18,6 +18,13 @@
             return $regiones;
         }
 
+        public function verRegionPorID()
+        {
+            $regID = $_GET['regID'];
+            $link = Conexion::conectar();
+
+        }
+        
         ###########################
         #### getters & setters ####
         /**
