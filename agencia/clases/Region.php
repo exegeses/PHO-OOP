@@ -18,6 +18,11 @@
             return $regiones;
         }
 
+
+        /**
+         * Método para ver una región por si ID
+         * @return bool
+         */
         public function verRegionPorID()
         {
             $regID = $_GET['regID'];
@@ -34,6 +39,27 @@
             $this->setRegNombre( $datosRegion['regNombre'] );
 
             return true;
+        }
+
+        public function agregarRegion()
+        {
+            $regNombre = $_POST['regNombre'];
+            $link = Conexion::conectar();
+            $sql = "INSERT INTO regiones
+                            ( regNombre )
+                        VALUE
+                            ( :regNombre )";
+            $stmt = $link->prepare($sql);
+            //dataBinding (relación de datos)
+            $stmt->bindParam(':regNombre', $regNombre, PDO::PARAM_STR);
+
+            if( $stmt->execute() ){
+                //registramos en el objeto de tipo Región sus atributos
+                $this->setRegID($link->lastInsertId());
+                $this->setRegNombre($regNombre);
+                return true;
+            }
+            return false;
         }
         
         ###########################
