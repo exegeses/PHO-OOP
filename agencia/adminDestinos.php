@@ -22,7 +22,7 @@
                     <th>Totales</th>
                     <th>Disponibles</th>
                     <th colspan="2">
-                        <a href="" class="btn btn-outline-success">
+                        <a href="formAgregarDestino.php" class="btn btn-outline-success">
                             <i class="fas fa-plus mr-2"></i>
                             Agregar
                         </a>
