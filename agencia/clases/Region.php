@@ -41,6 +41,11 @@
             return true;
         }
 
+
+        /**
+         * Método para agregar una Región
+         * @return bool
+         */
         public function agregarRegion()
         {
             $regNombre = $_POST['regNombre'];
