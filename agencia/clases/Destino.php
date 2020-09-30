@@ -50,11 +50,16 @@
 
             if( $stmt->execute() ){
                 //registramos todos los atributos
-
+                $this->setRegID($link->lastInsertId());
+                $this->setDestNombre($destNombre);
+                $this->setRegID($regID);
+                $this->setDestPrecio($destPrecio);
+                $this->setDestAsientos($destAsientos);
+                $this->setDestDisponibles($destDisponibles);
+                $this->setDestActivo(1);//default
                 return true;
             }
             return false;
-
         }
         
         ###### getters & setters
