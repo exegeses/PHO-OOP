@@ -4,6 +4,16 @@
     session_start();
 
     /*
+     * función de autocarga
+     * */
+    function autoLoader($nClase)
+    {
+        require_once 'clases/'.$nClase.'.php';
+    }
+
+    spl_autoload_register('autoLoader');
+
+    /*
      * css sección activa
      * */
 

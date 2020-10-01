@@ -1,7 +1,5 @@
 <?php
     require 'config/config.php';
-    require 'clases/Conexion.php';
-    require 'clases/Destino.php';
     $Destino = new Destino();
         $chequeo = $Destino->agregarDestino();
 

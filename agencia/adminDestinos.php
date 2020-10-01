@@ -1,7 +1,5 @@
 <?php
     require 'config/config.php';
-    require 'clases/Conexion.php';
-    require 'clases/Destino.php';
     $Destino = new Destino();
         $destinos = $Destino->listarDestinos();
     include 'includes/over-all-header.html';
